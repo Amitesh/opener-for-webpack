@@ -24,7 +24,9 @@
   ],
   "author": "Amitesh Kumar <amitesingh@gmail.com>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "opener": "^1.4.2"
+  },
   "devDependencies": {
     "babel-cli": "^6.5.1",
     "babel-eslint": "^4.1.8",
