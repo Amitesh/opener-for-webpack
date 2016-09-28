@@ -10,7 +10,9 @@
   ],
   "scripts": {
     "build": "rimraf lib && babel ./src -d lib --ignore '__test__'",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "test": "node_modules/.bin/mocha --reporter spec",
+    "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
   },
   "repository": {
     "type": "git",

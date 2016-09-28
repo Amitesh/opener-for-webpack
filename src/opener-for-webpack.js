@@ -11,13 +11,11 @@ export default class OpenerForWebpack {
 
   apply(compiler) {
     var self = this;
-    compiler.plugin('done', function() {
-      // console.log('\033[32m=== Hello World! ===\33[m');
-      // console.log('Build path to open =>', self.options.url);
-      if (!self.isOpen) {
+    compiler.plugin('done', function(stats) {
+      if (!self.isOpen && !stats.hasErrors()) {
         opener(self.options.url);
+        self.isOpen = true; // open only first time
       }
-      self.isOpen = true;
     });
   }
 }
