@@ -4,12 +4,12 @@ A simple plugin to open the app in browser after compiling the code by webpack
 
 ## Installation
 
-  `npm install @amitesh-kumar/opener-for-webpack`
+  `npm install opener-for-webpack`
 
 ## Usage
 
 ```js
-    var openerForWebpack = require('@amitesh-kumar/opener-for-webpack');
+    var openerForWebpack = require('opener-for-webpack');
     plugins = [
       new openerForWebpack();
     ]
