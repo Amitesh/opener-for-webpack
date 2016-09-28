@@ -20,7 +20,7 @@
     "webpack",
     "opener"
   ],
-  "author": "Amitesh Kumar",
+  "author": "Amitesh Kumar <amitesingh@gmail.com>",
   "license": "MIT",
   "dependencies": {
   },
