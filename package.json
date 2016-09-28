@@ -1,0 +1,40 @@
+{
+  "name": "opener-for-webpack",
+  "version": "0.1.0",
+  "description": "Open the app in browser after starting the webpack server",
+  "main": "lib/opener-for-webpack.js",
+  "files": [
+    "*.md",
+    "src/*.js",
+    "lib/*.js"
+  ],
+  "scripts": {
+    "build": "rimraf lib && babel ./src -d lib --ignore '__test__'",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amitesh/opener-for-webpack.git"
+  },
+  "keywords": [
+    "webpack",
+    "opener"
+  ],
+  "author": "Amitesh Kumar",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-eslint": "^4.1.8",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-preset-es2015": "^6.5.0",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^5.0.1",
+    "rimraf": "^2.5.2"
+  },
+  "bugs": {
+    "url": "https://github.com/Amitesh/opener-for-webpack/issues"
+  },
+  "homepage": "https://github.com/Amitesh/opener-for-webpack#readme"
+}
