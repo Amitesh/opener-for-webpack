@@ -1,6 +1,6 @@
 {
   "name": "opener-for-webpack",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Open the app in browser after starting the webpack server",
   "main": "lib/opener-for-webpack.js",
   "files": [
