@@ -1,6 +1,6 @@
-# opener-for-webpack [![npm package][npm-badge]][npm]
+# opener-for-webpack <!-- [![npm package][npm-badge]][npm]
 [![Build Status](https://travis-ci.org/Amitesh/opener-for-webpack.svg?branch=master)](https://travis-ci.org/Amitesh/opener-for-webpack)
-[![Coverage Status](https://coveralls.io/repos/github/Amitesh/opener-for-webpack/badge.svg)](https://coveralls.io/github/Amitesh/opener-for-webpack)
+[![Coverage Status](https://coveralls.io/repos/github/Amitesh/opener-for-webpack/badge.svg)](https://coveralls.io/github/Amitesh/opener-for-webpack) -->
 
 A simple plugin to open the app in browser after compiling the code by webpack
 
