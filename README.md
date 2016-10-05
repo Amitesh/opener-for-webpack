@@ -1,6 +1,4 @@
-# opener-for-webpack <!-- [![npm package][npm-badge]][npm]
-[![Build Status](https://travis-ci.org/Amitesh/opener-for-webpack.svg?branch=master)](https://travis-ci.org/Amitesh/opener-for-webpack)
-[![Coverage Status](https://coveralls.io/repos/github/Amitesh/opener-for-webpack/badge.svg)](https://coveralls.io/github/Amitesh/opener-for-webpack) -->
+# opener-for-webpack
 
 A simple plugin to open the app in browser after compiling the code by webpack
 
@@ -20,6 +18,27 @@ A simple plugin to open the app in browser after compiling the code by webpack
         new OpenerForWebpack({url: 'http://localhost:8090'})
       ]
     };
+```
+
+### With webpack-multi-configurator plugin with angularity
+
+```js
+var angularity = require('webpack-angularity-solution');
+var opener     = require('opener-for-webpack');
+
+const PORT = '3000';
+
+module.exports = angularity(process.env, {port: PORT})
+  .append(openTheApp)
+  .otherwise('app+test')
+  .resolve();
+
+
+function openTheApp(configurator, options) {
+  var url = 'http://localhost' + (options.port ? ':' + options.port : '');
+  return configurator
+    .plugin('opener-for-webpack', opener, [{url: url}]);
+}
 ```
 
 ## Tests
