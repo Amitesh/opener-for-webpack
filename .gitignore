@@ -7,3 +7,5 @@ npm-debug.log
 
 # Project
 lib
+
+test/test.spec.js

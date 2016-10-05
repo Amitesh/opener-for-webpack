@@ -33,6 +33,3 @@ In lieu of a formal style guide, take care to maintain the existing coding style
 [npm-badge]: https://img.shields.io/npm/v/opener-for-webpack.svg?style=flat-square
 [npm]: https://www.npmjs.com/package/opener-for-webpack
 
-
-const OpenerPlugin = require('webpack-opener');
-
