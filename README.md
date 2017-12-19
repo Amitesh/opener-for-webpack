@@ -2,6 +2,8 @@
 
 A simple plugin to open the app in browser after compiling the code by webpack
 
+## NPM
+[https://www.npmjs.com/package/opener-for-webpack](https://www.npmjs.com/package/opener-for-webpack)
 ## Installation
 
   `npm install -D opener-for-webpack`
